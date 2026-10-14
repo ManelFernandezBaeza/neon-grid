@@ -1,0 +1,33 @@
+# Secrets & keys
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+known_hosts
+*.p12
+*.pfx
+credentials*
+secrets*
+
+# Logs, backups, editor swap
+*.log
+*.bak
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / tooling
+.vscode/
+.idea/
+node_modules/
+__pycache__/
+.claude/
+CLAUDE.md
+
+# Unprocessed screenshots (never committed)
+raw-screenshots/
