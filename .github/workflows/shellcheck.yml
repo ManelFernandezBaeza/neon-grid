@@ -1,0 +1,36 @@
+name: ShellCheck
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.sh"
+      - ".github/workflows/shellcheck.yml"
+  pull_request:
+    paths:
+      - "**.sh"
+      - ".github/workflows/shellcheck.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shellcheck:
+    name: Lint installer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: ShellCheck version
+        run: shellcheck --version
+
+      # Fails the build only on real errors.
+      - name: ShellCheck (errors)
+        run: shellcheck --severity=error install-neon-grid.sh
+
+      # Full report (warnings, info, style) for reference; never fails the build.
+      - name: ShellCheck (full report)
+        continue-on-error: true
+        run: shellcheck --format=gcc install-neon-grid.sh
