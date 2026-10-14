@@ -93,8 +93,8 @@ Paleta: fondo `#0a0e0a` · neón `#00ff9c` · acento `#39ff14` · secundario `#1
 | Gestor de inicio | **LightDM** para dejar bspwm como sesión por defecto automáticamente (es el de Kali). También funciona `startx` desde una TTY. |
 | Arquitectura | **amd64** de 64 bits (x86_64) |
 | CPU | **4 núcleos** (2 procesadores × 2 núcleos), como en la guía de VM de Kali · Kali no fija un mínimo oficial |
-| RAM | **2 GB** mínimo · mejor más si tu equipo anfitrión puede permitírselo |
-| Disco | **20 GB** mínimo · la guía de VM de Kali usa **80 GB** |
+| RAM | **2 GB** mínimo · **4 GB o más** recomendado |
+| Disco | **20 GB** mínimo · recomendable más (la guía de VM de Kali usa **80 GB**) |
 | Versiones | `picom.conf` usa la sintaxis `rules` (picom **v12+**) y polybar usa `internal/tray` (polybar **3.7+**). La kali-rolling actual trae versiones compatibles. |
 
 Los valores de hardware son los [requisitos oficiales de instalación](https://www.kali.org/docs/installation/hard-disk-install/) de Kali para una instalación con escritorio y los de su [guía para VMware](https://www.kali.org/docs/virtualization/install-vmware-guest-vm/).
