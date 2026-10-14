@@ -91,8 +91,13 @@ Paleta: fondo `#0a0e0a` · neón `#00ff9c` · acento `#39ff14` · secundario `#1
 | Usuario | Un **usuario normal con sudo**. El script se niega a ejecutarse como root. |
 | Internet | Necesario: `apt`, la descarga de JetBrainsMono Nerd Font y el `git clone` de powerlevel10k. |
 | Gestor de inicio | **LightDM** para dejar bspwm como sesión por defecto automáticamente (es el de Kali). También funciona `startx` desde una TTY. |
-| Disco / RAM | El script no lo especifica. Instala unos 40 paquetes, algunos grandes (`xorg`, `seclists`, `pandoc`, `weasyprint`), así que conviene tener varios GB libres. |
+| Arquitectura | **amd64** de 64 bits (x86_64) |
+| CPU | **4 núcleos** (2 procesadores × 2 núcleos), como en la guía de VM de Kali · Kali no fija un mínimo oficial |
+| RAM | **2 GB** mínimo · mejor más si tu equipo anfitrión puede permitírselo |
+| Disco | **20 GB** mínimo · la guía de VM de Kali usa **80 GB** |
 | Versiones | `picom.conf` usa la sintaxis `rules` (picom **v12+**) y polybar usa `internal/tray` (polybar **3.7+**). La kali-rolling actual trae versiones compatibles. |
+
+Los valores de hardware son los [requisitos oficiales de instalación](https://www.kali.org/docs/installation/hard-disk-install/) de Kali para una instalación con escritorio y los de su [guía para VMware](https://www.kali.org/docs/virtualization/install-vmware-guest-vm/).
 
 > [!TIP]
 > En una máquina virtual, activa la **aceleración 3D** para tener blur y sombras completas. Sin ella NEON//GRID funciona igual con la config ligera de picom.
