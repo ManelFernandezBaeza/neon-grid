@@ -266,6 +266,6 @@ Publicado bajo la **Licencia Pública General de GNU v3.0 o posterior** (`GPL-3.
 
 <div align="center">
 
-<sub><code>kali://bspwm :: sys.online :: trace.active</code></sub>
+<sub><a href="#top">↑ Volver arriba</a></sub>
 
 </div>

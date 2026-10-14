@@ -266,6 +266,6 @@ Released under the **GNU General Public License v3.0 or later** (`GPL-3.0-or-lat
 
 <div align="center">
 
-<sub><code>kali://bspwm :: sys.online :: trace.active</code></sub>
+<sub><a href="#top">↑ Back to top</a></sub>
 
 </div>
